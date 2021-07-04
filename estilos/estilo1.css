@@ -1,0 +1,238 @@
+  *{
+	 /*Quita los vordes a la pagina*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body{
+       font-family: 'Open Sans', sans-serif; /*tipo de fuente*/
+   }
+   
+   .ir-arriba {
+	   display:none; /* vista de boton */
+	   padding:10px; /* espacio de relleno en los lados */ 
+	   background:#808020; /* color de relleno */
+	   font-size:30px; /* tamaño de fuente */
+	   color:#fff; /* color del icono */
+	   cursor:pointer; /* diseño del cursor */
+	   position: fixed; /* posicionamiento absoluto */
+	   bottom: 20px; 
+	   right: 20px;
+	   border-radius: 40%;
+   }
+   
+   .tabla {
+	   width: 50%;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   .contenedor2 {        
+	   padding: 50px 0; /* establece el espacio de relleno por todos los lados */
+	   width: 90%; /* ancho */
+	   max-width: 1000px; /* max-width coloca el máximo ancho a un elemento.
+                    	Además, impide que el valor de width sea más largo que 
+						el valor especificado en max-width */
+	   margin: auto; /* margin establece el margen para los cuatro lados.
+  	                Es una abreviación para evitar tener que establecer cada
+					lado por separado con las otras propiedades de margen: margin-top (en-US),
+					margin-right , margin-bottom y margin-left (en-US). */
+	   overflow: hidden; /* overflow especifica: si recortar contenido, dibujar barras de
+                	   desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+					   Usando la propiedad overflow con un valor distinto a visible , valor por defecto,
+					   creará un nuevo contexto de formatos de bloques */
+   }
+   
+	.contenedor {        
+	   padding: 50px 0; /* establece el espacio de relleno por todos los lados */
+	   width: 90%; /* ancho */
+	   max-width: 1000px; /* max-width coloca el máximo ancho a un elemento.
+                    	Además, impide que el valor de width sea más largo que 
+						el valor especificado en max-width */
+	   margin: auto; /* margin establece el margen para los cuatro lados.
+  	                Es una abreviación para evitar tener que establecer cada
+					lado por separado con las otras propiedades de margen: margin-top (en-US),
+					margin-right , margin-bottom y margin-left (en-US). */
+	   overflow: hidden; /* overflow especifica: si recortar contenido, dibujar barras de
+                	   desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.
+					   Usando la propiedad overflow con un valor distinto a visible , valor por defecto,
+					   creará un nuevo contexto de formatos de bloques */				   
+   }
+   
+   .titulo{
+	   color: #808000; /* color verde */
+	   font-size: 45px; /* tamaño de letra*/
+	   text-align: center; /*posición del texto*/
+	   margin-bottom: 60px; /*espacio en la parte inferior*/
+   }
+   
+   header{
+	   width: 100% /*ancho*/
+	   height: 600px; /*posición de altura */
+	   
+	    background: #f12711; /* color rojo */
+        background: -webkit-linear-gradient(to right, #f12711, #f5af19),  url(../imagenes/Fondo.jpg) ; /* colores sobre la imagen */
+        background: linear-gradient(to right, hsla(5, 88%, 50%, 0.490), hsla( 40, 91%, 52%, 0.524)),  url(../imagenes/Fondo.jpg) ; /* colores degradientes sobre la imagen */
+	    background-size: cover; /*tamaño de imagen pequeño, manteniendo las proporciones*/
+	    background-attachment: fixed; /* mantiene su posición aún después del scroll*/
+	    position: relative; /*relative en el atributo position indica que la capa sí
+	                        forma parte del flujo normal de elementos de la página,
+	                        por lo que su posición dependerá del lugar donde esté
+               	            en el código y el flujo HTML.*/
+   }
+   
+   nav{
+	   text-align: right; /*text-align define cuatro valores para alinear los contenidos a la izquierda ( left ),
+                     	    a la derecha ( right ), centrados ( center ) o justificados ( justify ) */
+							
+	   padding: 30px 50px 0 0; /*establece el espacio de relleno por todos los lados */
+   }
+   
+   nav > a{
+	   color: #000; /*color negro */
+	   font-weight: 600; /* tamaño letra */
+	   text-decoration: none; /*text-decoration se usa para establecer el formato de texto a subrayado ( underline )
+	                        y suprarrayado ( overline ), tachado ( line-through ) o parpadeo ( blink ). 
+	                        El subrayado y el suprarrayado son posicionados bajo el texto, mientras la línea a través
+							de éste se posiciona por encima. */
+	   margin-right: 10px; /* margen en el lado derecho */
+   }
+   
+   nav > a:hover{
+	   text-decoration: underline; /*texto subrayado*/
+   }
+   
+   header .textos{
+	   display: flex; /* display especifica si un elemento es tratado como block or inline element y el diseño usado por 
+	                sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+	                Formalmente la propiedad display establece los tipos de visualización interna y externa de un elemento. */
+	   height:430px; /* posición de altura */ 
+	   width: 100%; /* ancho */
+	   align-items: center; /*align-items establece el valor align-self sobre todos los descendientes directos de un grupo.*/
+	   justify-content: center; /* justify-content define cómo el navegador distribuye el espacio entre y alrededor de los 
+	                           items flex, a lo largo del eje principal de su contenedor.*/
+	   text-align: center; /* centra el texto */
+	   flex-direction: column; /* coloca los textos en columnas */
+   }
+   
+   .textos h1{
+	   font-size: 50px; /* tamaño de la fuente */
+	   color: #000; /* color negro */
+   }
+   
+   .textos h2{  /* tamaño de fuente */
+	   font-size:30px; /* tamaño de la fuente */
+	   font-weight: 300; /* especifica el peso o grueso de la letra */
+	   color: #000; /* color negro */
+   }
+   
+   
+   
+   .ola{
+	   position: absolute; /*absolute en el atributo position permite posicionar elementos de manera absoluta,
+	                       esto es de manera definida por valores de los atributos top, left,
+	                       bottom y right, que indican la distancia con respecto a un punto.*/
+	   bottom: 0; /* bottom especifica parte de la posición de un elemento (posicionado - es decir,
+                  con una posición determinada por código). */
+	   width: 100%; /* ancho */
+   }
+   
+   .contenedor2 { 
+	   display: flex; /* ex es una propiedad resumida que indica la capacidad de un elemento
+	                flexible para alterar sus dimensiones y llenar el espacio disponible */
+	   justify-content: space-evenly; /*  justify-content define cómo el navegador distribuye el espacio entre y
+	                                alrededor de los items flex, a lo largo del eje principal de su contenedor */
+   }
+   
+   .imagen-about-us {
+	   width: 38%; /* ancho */
+   }
+   
+   .contenedor1 .contenedor3 {
+	   width: 40%; /* ancho */
+   }
+   
+   .contenedor3 h3{
+	    margin-bottom: 15px; /* espacio en la parte inferior */
+   }
+   
+   .contenedor3 h3 span{
+	   background: #808000; /* color verde pantano */
+	   color: #fff; /* color blanco */
+	   border-radius: 50%;
+	   display: inline-block;
+	   text-align: center; /* texto centrado */
+	   width: 30px; /* ancho */
+	   height: 30px; /* alto */
+	   padding: 3px; /* relleno */
+	   box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+	   margin-right: 5px; /* margen al lado derecho */
+   }
+   
+   .contenedor3 p{
+	   padding: 0px 0px 30px 15px; /* relleno */
+	   font-weight: 300; /* tamaño de la fuente */
+	   text-align: justify; /* posición del texto */
+   }
+   
+   footer{
+	   background: #808020; /* color verde */ 
+	   padding: 60px 0 30px 0; /* relleno */ 
+	   margin: auto; /* margen automatico */
+	   overflow: hidden;
+   }
+   
+   .contenedor-footer{
+       display: flex;
+	   width: 90%; /* ancho */ 
+	   justify-content: space-evenly;
+	   margin: auto; /* margen auromatico */
+	   padding-bottom: 50px; /*espacio de relleno en la parte inferior */
+	   border-bottom: 1px solid #ccc; /* borde en la parte inferior */
+   
+   }
+   
+   .content-foo{
+	   text-align: center; /* posición del texto */
+   }
+   
+   .content-foo h4{
+	   color: #fff /* color blanco */
+	   border-bottom: 3px solid #af20d3; /* borde en la parte inferior */ 
+	   padding-bottom: 5px; /* espacio de relleno en la parte inferior */
+	   margin-bottom: 10px; /* margen en la parte inferior */
+   }
+   
+   .content-foo p{
+	   color: #ccc; /* tipo de gris */  
+   }
+   
+   .titulo-final{
+	   text-align: center; /* texto centrado */
+	   font-size: 24px; /* tamaño de la fuente */
+	   margin: 20px 0 0 0 ; /* margenes */
+	   color: #9e9797 /* color gris */
+   }
+   
+   
+   /*adaptación a celulares*/
+   @media screen and (max-width:900px){
+	   header{
+		   background-position: center;
+		   
+	    }
+		.contenedor1 .contenedor3{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.contenedor1 .contenedor3{
+			width: 90%
+		}
+		.imagen-about-us{
+			width: 90%;
+		}
+		
+   }
+   
